@@ -36,16 +36,16 @@ function main() {
   const textureLoader = new THREE.TextureLoader();
 
   // Load textures for the Earth
-  const earthTexture = textureLoader.load("earthmap.jpg");
-  const specularTexture = textureLoader.load("specularmap.jpg");
-  const citylightsTexture = textureLoader.load("citylightsmap.jpg");
-  const bumpTexture = textureLoader.load("earthbump.jpg");
-  const cloudTexture = textureLoader.load("earthCloud.png");
-  const galaxyTexture = textureLoader.load("galaxy.png");
+  const earthTexture = textureLoader.load("/earthmap.jpg");
+  const specularTexture = textureLoader.load("/specularmap.jpg");
+  const citylightsTexture = textureLoader.load("/citylightsmap.jpg");
+  const bumpTexture = textureLoader.load("/earthbump.jpg");
+  const cloudTexture = textureLoader.load("/earthCloud.png");
+  const galaxyTexture = textureLoader.load("/galaxy.png");
 
   // Load textures for the Asteroid
-  const asteroidTexture = textureLoader.load("asteroid.jpg");
-  const rockTexture = textureLoader.load("rockTexture.jpg");
+  const asteroidTexture = textureLoader.load("/asteroid.jpg");
+  const rockTexture = textureLoader.load("/rockTexture.jpg");
 
   // Earth geometry and material
   const earthgeometry = new THREE.SphereGeometry(0.6, 32, 32);
